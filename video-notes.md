@@ -29,7 +29,7 @@ JSX
 
 
 
-Functional component
+#### Functional component
 
 const SearchBar() = {
   return (
@@ -37,7 +37,8 @@ const SearchBar() = {
   );
 }
 
-Class component — when you want the concept of state
+#### Class component 
+— when you want the concept of state
 
 class SearchBar extends React.Component {
   render() {
@@ -82,6 +83,43 @@ We want the most parent component to be responsible for fetching data
 - create a return function                                                return ();
 - move the body of the render method into the return function
 - take out all of the `this.props` and replace with just `props`.
+
+
+====================================================================
+
+
+## BIND
+
+Here is an example of a .bind
+
+`this.showModal = this.showModal.bind(this);`
+
+This line is necessary because showModal()'s body contains the word `this`.
+
+
+
+
+====================================================================
+
+
+## HANDLING EVENTS
+
+just know that in React, whenever you define an event handler that uses this, you need to add this.methodName = this.methodName.bind(this) to your constructor function.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
