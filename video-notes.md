@@ -112,7 +112,7 @@ just know that in React, whenever you define an event handler that uses this, yo
 ====================================================================
 
 
-
+2 types of state: application state and component state
 
 ###Unidirectional Data Flow: 
 All data in our applications flow in a single direction. In React it flows down the tree from parent to child. This makes tracking the source and destination easy compared to other architectures where data may be coming from many parts of the application.
@@ -125,7 +125,6 @@ This is state that is used to allow a component to function. Local component sta
 
 
 ====================================================================
-
 
 
 
