@@ -1,4 +1,4 @@
-var Counter = React.createClass({
+   var Counter = React.createClass({
     getDefaultProps: function() {
         console.log('getDefaultProps');
         return {

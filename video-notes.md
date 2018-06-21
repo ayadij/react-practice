@@ -127,6 +127,8 @@ This is state that is used to allow a component to function. Local component sta
 ====================================================================
 
 
+.this
+different than even vanilla js
 
 
 
