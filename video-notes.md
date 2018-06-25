@@ -245,4 +245,9 @@ export default function(state, action) {
 }
 ```
 
+==============================================================
+
+COMPONENT --> CONTAINER
+container speaks with state
+
 
