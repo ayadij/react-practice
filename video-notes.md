@@ -130,12 +130,67 @@ This is state that is used to allow a component to function. Local component sta
 .this
 different than even vanilla js
 
-
+in reference to the instantiated component
 
 
 
 
 ====================================================================
+
+
+
+Application State
+has pieces of state
+that is produced by reducers
+reducers produce the value of state
+
+(1) create reducer, then (2) wire it into the application 
+in index.js
+
+funtion() {
+  return [
+    { title: 'book of books'},
+    { title: 'booking around'},
+    { title: 'book book'},
+    { title: 'how was has wihtoug '},
+  ]
+}
+
+
+plug in application state
+
+react views and redux state
+combining separate libraries react reduxcs redux
+
+data (redux) + views (react)
+
+
+container VS component --
+- component that doenst have a handle on the state that is stored in redux is referred to as DUMB
+- only the most parent component that cares about the state 
+- containers are the link between redux and react
+
+==============================================================
+
+```import{ connect } from 'react-redux';```
+connect takes a function and a component and produces a container
+a container is a component that is aware of the state stored by redux
+```fuction mapStateToProps(state) { return { books: state.books }; }```
+the mapStateToProps function is key here. 
+the first argument is a state
+it returns and object
+whatever object is returned is available to the component as this.props
+
+
+
+==============================================================
+
+
+
+
+
+
+
 
 
 
