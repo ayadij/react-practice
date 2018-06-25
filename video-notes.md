@@ -138,8 +138,11 @@ in reference to the instantiated component
 ====================================================================
 
 
+Redux takes care of APPLICATION STATE which is not the same as state in each component
+formed by reducers
 
-Application State
+reducers are in charge of manipulating application state
+
 has pieces of state
 that is produced by reducers
 reducers produce the value of state
@@ -196,6 +199,8 @@ the newly returned value is state
 whatever is returned by the reducer becomes the new value of the state
 the newly assembled state gets pumped back into the containers and gets rerunned/rerendered with the new data
 then application is refreshed and waiting for next action
+actions must always have a TYPE defined. convention is to define PAYLOAD.
+
 
 SIMPLY:
 event is triggered by user
@@ -249,5 +254,7 @@ export default function(state, action) {
 
 COMPONENT --> CONTAINER
 container speaks with state
+
+
 
 
