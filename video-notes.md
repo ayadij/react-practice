@@ -173,7 +173,8 @@ container VS component --
 - containers are the link between redux and react
 
 ==============================================================
-
+(udemy)
+d
 ```import{ connect } from 'react-redux';```
 connect takes a function and a component and produces a container
 a container is a component that is aware of the state stored by redux
@@ -184,9 +185,10 @@ it returns and object
 whatever object is returned is available to the component as ```this.props```
 
 ==============================================================
+ACTIONS AND ACTION CREATORS (udemy)
 
-call an ACTION CREATER == a function that returns an action as an object
-that object is sent to reducers. called an ACTION
+call an ACTION CREATER == a function that returns an action
+action is a as an object that flows thru reducers
 the action is sent to all the reducers in the application
 inside of each reducers, set up SWITCH STATEMENT 
 reducer doesnt have to react to each action. it can return just the state as it was
@@ -204,9 +206,43 @@ redcers assemble the new state
 the new satae flows into the new containers
 
 
+==============================================================
+BINDING ACTION CREATORS
 
 
+```import { bindActionCreators } from 'redux';```
+
+```js
+funtion mapDispatchToProps(dispatch) {
+  return bindActionCreators({ selectBook: selectBook }, dispatch)
+}
+```
+
+takes actions, ameks sure they get passed to reducers throughout acdakkkwl
+
+many ways to use 
+
+you want to get state and map to props.
 
 
+==============================================================
+USABLEcutesleect
+
+==============================================================
+
+
+Consuming actions in reducers:
+Reducer 
+
+every action must have a TYPE PROPERTY that describes the purpose of the action.
+PAYLOAD describes the action that is being undertaken; more information
+
+
+```js
+export default function(state, action) {
+  state += 1
+  return state;
+}
+```
 
 
