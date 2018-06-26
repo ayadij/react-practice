@@ -23,7 +23,7 @@ Whenever a components state is changed, the component immediately re renders and
 
 Redux
 JSX
-
+WebPack
 
 ====================================================================
 
@@ -203,12 +203,12 @@ actions must always have a TYPE defined. convention is to define PAYLOAD.
 
 
 SIMPLY:
-event is triggered by user
-call an action creater
-retuns an action
-action flows thru reducers
-redcers assemble the new state
-the new satae flows into the new containers
+- event is triggered by user
+- call an action creater
+- retuns an action
+- action flows thru reducers
+- redcers assemble the new state
+- the new satae flows into the new containers
 
 
 ==============================================================
@@ -254,12 +254,37 @@ export default function(state, action) {
 
 COMPONENT --> CONTAINER
 container speaks with state
-
+rely on redux instead of AJAX calls?
 
 
 ==============================================================
 
+
+WHAT IS REACT? 
+Officially - js library for building user interfaces
+Unofficially - a js library that makes it really easy to develope responsive web pages
+developed by FB
+rival: angular
+
+components are fundimental building blocks for react
+internal state, external props
+
+
 ==============================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ==============================================================
